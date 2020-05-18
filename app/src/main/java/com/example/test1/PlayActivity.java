@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -24,7 +25,7 @@ public class PlayActivity extends AppCompatActivity {
 
     private StorageReference mStorageRef;
     private VideoView mainVideoView;
-    private ImageButton playBtn;
+    private ImageView playBtn;
     private TextView currentTimer;
     private TextView durationTimer;
     private ProgressBar currentProgress;
@@ -59,7 +60,7 @@ public class PlayActivity extends AppCompatActivity {
         mStorageRef = FirebaseStorage.getInstance().getReference();
 
         mainVideoView = (VideoView) findViewById(R.id.mainVideoView);
-        playBtn = (ImageButton) findViewById(R.id.playBtn);
+        playBtn = (ImageView) findViewById(R.id.playBtn);
         currentProgress = (ProgressBar) findViewById(R.id.videoProgress);
         currentProgress.setMax(100);
 
