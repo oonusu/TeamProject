@@ -43,7 +43,7 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
-        btn_search = findViewById(R.id.btn_search);//리뷰 목록 버튼
+        btn_search = findViewById(R.id.btn_search); //리뷰 목록 버튼
         btn_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
